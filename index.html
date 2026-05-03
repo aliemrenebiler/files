@@ -214,14 +214,14 @@
             return listItem;
         }
 
-        function createFolderToggleButton(folders, targetLabel) {
+        function createFolderToggleButton(folders) {
             const button = document.createElement("button");
             const updateButton = () => {
                 const allCollapsed = folders.every((folder) => !folder.open);
-                button.textContent = allCollapsed ? "Expand all" : "Collapse all";
+                button.textContent = allCollapsed ? "Expand All" : "Collapse All";
                 button.setAttribute(
                     "aria-label",
-                    `${allCollapsed ? "Expand" : "Collapse"} ${targetLabel}`,
+                    `${allCollapsed ? "Expand" : "Collapse"} all folders`,
                 );
             };
 
@@ -252,7 +252,6 @@
             const childrenColumn = document.createElement("div");
             const folderPath = `${parentPath}${item.name}/`;
             const childList = createTree(item.children || [], folderPath);
-            const childFolders = [...childList.querySelectorAll("details")];
 
             details.open = item.open === true;
             summaryColumn.className = "tree-column";
@@ -262,15 +261,6 @@
             childrenRow.className = "tree-children";
             childrenColumn.className = "tree-column tree-line";
             childrenRow.append(childrenColumn, childList);
-
-            if (childFolders.length > 0) {
-                const actionItem = document.createElement("li");
-                const collapseButton = createFolderToggleButton(childFolders, `folders inside ${item.name}`);
-
-                actionItem.className = "folder-action";
-                actionItem.append(collapseButton);
-                childList.prepend(actionItem);
-            }
 
             details.append(summary, childrenRow);
             listItem.append(details);
@@ -293,18 +283,16 @@
 
         function renderFiles(files) {
             const fileList = createTree(files);
-            const baseFolders = [...fileList.children]
-                .map((item) => item.firstElementChild)
-                .filter((item) => item?.tagName === "DETAILS");
+            const folders = [...fileList.querySelectorAll("details")];
 
-            if (baseFolders.length === 0) {
+            if (folders.length === 0) {
                 tree.replaceChildren(fileList);
                 return;
             }
 
             const action = document.createElement("li");
             action.className = "folder-action";
-            action.append(createFolderToggleButton(baseFolders, "base folders"));
+            action.append(createFolderToggleButton(folders));
             fileList.prepend(action);
             tree.replaceChildren(fileList);
         }
