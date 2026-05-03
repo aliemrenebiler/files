@@ -1,10 +1,10 @@
 [
     {
-        "name": "shuttlefly-effect",
+        "name": "projects",
         "type": "folder",
         "children": [
             {
-                "name": "images",
+                "name": "shuttlefly-effect",
                 "type": "folder",
                 "children": [
                     {
