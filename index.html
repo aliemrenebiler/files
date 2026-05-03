@@ -13,7 +13,6 @@
             --text: #e6edf3;
             --muted: #8b949e;
             --link: #58a6ff;
-            --folder: #f2cc60;
         }
 
         * {
@@ -70,37 +69,28 @@
 
         .tree ul {
             margin: 0;
-            padding-left: 24px;
+            padding-left: 22px;
             list-style: none;
             border-left: 1px solid var(--border);
         }
 
+        .tree details > ul {
+            margin-left: 6px;
+        }
+
         .tree > ul {
+            margin-left: 0;
             padding-left: 0;
             border-left: 0;
         }
 
         .tree li {
-            position: relative;
             margin: 8px 0;
-            padding-left: 20px;
-        }
-
-        .tree li::before {
-            content: "";
-            position: absolute;
-            top: 0.85em;
-            left: 0;
-            width: 12px;
-            border-top: 1px solid var(--border);
+            padding-left: 0;
         }
 
         .tree > ul > li {
             padding-left: 0;
-        }
-
-        .tree > ul > li::before {
-            display: none;
         }
 
         details {
@@ -110,7 +100,7 @@
         summary {
             cursor: pointer;
             font-weight: 700;
-            color: var(--folder);
+            color: var(--text);
         }
 
         .file {
