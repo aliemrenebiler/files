@@ -69,13 +69,8 @@
 
         .tree ul {
             margin: 0;
-            padding-left: 22px;
+            padding-left: 0;
             list-style: none;
-            border-left: 1px solid var(--border);
-        }
-
-        .tree details > ul {
-            margin-left: 6px;
         }
 
         .tree > ul {
@@ -98,9 +93,57 @@
         }
 
         summary {
+            display: inline-grid;
+            grid-template-columns: 20px auto;
+            gap: 8px;
+            align-items: center;
             cursor: pointer;
             font-weight: 700;
             color: var(--text);
+            list-style: none;
+        }
+
+        summary::marker,
+        summary::-webkit-details-marker {
+            display: none;
+            content: "";
+        }
+
+        .tree-column {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: stretch;
+            width: 20px;
+        }
+
+        summary .tree-column::before {
+            content: "";
+            width: 0.45rem;
+            height: 0.45rem;
+            border-top: 2px solid var(--muted);
+            border-right: 2px solid var(--muted);
+            transform: rotate(45deg);
+            transition: transform 120ms ease;
+        }
+
+        details[open] > summary .tree-column::before {
+            transform: rotate(135deg);
+        }
+
+        .tree-children {
+            display: grid;
+            grid-template-columns: 20px minmax(0, 1fr);
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .tree-line::before {
+            content: "";
+            width: 1px;
+            min-height: 100%;
+            background: var(--border);
         }
 
         .folder-action {
@@ -203,12 +246,22 @@
             const listItem = document.createElement("li");
             const details = document.createElement("details");
             const summary = document.createElement("summary");
+            const summaryColumn = document.createElement("span");
+            const summaryLabel = document.createElement("span");
+            const childrenRow = document.createElement("div");
+            const childrenColumn = document.createElement("div");
             const folderPath = `${parentPath}${item.name}/`;
             const childList = createTree(item.children || [], folderPath);
             const childFolders = [...childList.querySelectorAll("details")];
 
             details.open = item.open !== false;
-            summary.textContent = `${item.name}/`;
+            summaryColumn.className = "tree-column";
+            summaryLabel.textContent = `${item.name}/`;
+            summary.append(summaryColumn, summaryLabel);
+
+            childrenRow.className = "tree-children";
+            childrenColumn.className = "tree-column tree-line";
+            childrenRow.append(childrenColumn, childList);
 
             if (childFolders.length > 0) {
                 const actionItem = document.createElement("li");
@@ -219,7 +272,7 @@
                 childList.prepend(actionItem);
             }
 
-            details.append(summary, childList);
+            details.append(summary, childrenRow);
             listItem.append(details);
 
             return listItem;
