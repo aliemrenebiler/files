@@ -103,6 +103,28 @@
             color: var(--text);
         }
 
+        .folder-action {
+            margin: 8px 0;
+        }
+
+        .collapse-folder {
+            padding: 3px 8px;
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            background: transparent;
+            color: var(--muted);
+            cursor: pointer;
+            font: inherit;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .collapse-folder:hover,
+        .collapse-folder:focus-visible {
+            color: var(--text);
+            border-color: var(--muted);
+        }
+
         .file {
             display: inline-flex;
             align-items: center;
@@ -149,15 +171,53 @@
             return listItem;
         }
 
+        function createFolderToggleButton(folders, targetLabel) {
+            const button = document.createElement("button");
+            const updateButton = () => {
+                const allCollapsed = folders.every((folder) => !folder.open);
+                button.textContent = allCollapsed ? "Expand all" : "Collapse all";
+                button.setAttribute(
+                    "aria-label",
+                    `${allCollapsed ? "Expand" : "Collapse"} ${targetLabel}`,
+                );
+            };
+
+            button.className = "collapse-folder";
+            button.type = "button";
+            button.addEventListener("click", () => {
+                const allCollapsed = folders.every((folder) => !folder.open);
+                folders.forEach((folder) => {
+                    folder.open = allCollapsed;
+                });
+                updateButton();
+            });
+            folders.forEach((folder) => {
+                folder.addEventListener("toggle", updateButton);
+            });
+            updateButton();
+
+            return button;
+        }
+
         function createFolderNode(item, parentPath) {
             const listItem = document.createElement("li");
             const details = document.createElement("details");
             const summary = document.createElement("summary");
             const folderPath = `${parentPath}${item.name}/`;
             const childList = createTree(item.children || [], folderPath);
+            const childFolders = [...childList.querySelectorAll("details")];
 
             details.open = item.open !== false;
             summary.textContent = `${item.name}/`;
+
+            if (childFolders.length > 0) {
+                const actionItem = document.createElement("li");
+                const collapseButton = createFolderToggleButton(childFolders, `folders inside ${item.name}`);
+
+                actionItem.className = "folder-action";
+                actionItem.append(collapseButton);
+                childList.prepend(actionItem);
+            }
 
             details.append(summary, childList);
             listItem.append(details);
@@ -178,6 +238,24 @@
             return list;
         }
 
+        function renderFiles(files) {
+            const fileList = createTree(files);
+            const baseFolders = [...fileList.children]
+                .map((item) => item.firstElementChild)
+                .filter((item) => item?.tagName === "DETAILS");
+
+            if (baseFolders.length === 0) {
+                tree.replaceChildren(fileList);
+                return;
+            }
+
+            const action = document.createElement("li");
+            action.className = "folder-action";
+            action.append(createFolderToggleButton(baseFolders, "base folders"));
+            fileList.prepend(action);
+            tree.replaceChildren(fileList);
+        }
+
         fetch("files.json")
             .then((response) => {
                 if (!response.ok) {
@@ -187,7 +265,7 @@
                 return response.json();
             })
             .then((files) => {
-                tree.replaceChildren(createTree(files));
+                renderFiles(files);
             })
             .catch(() => {
                 const message = document.createElement("p");
