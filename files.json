@@ -282,10 +282,6 @@
                 "type": "folder",
                 "children": [
                     {
-                        "name": "AEN-u4s-ytu-3.jpg",
-                        "type": "file"
-                    },
-                    {
                         "name": "flyer.jpg",
                         "type": "file"
                     },
