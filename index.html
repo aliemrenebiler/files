@@ -254,7 +254,7 @@
             const childList = createTree(item.children || [], folderPath);
             const childFolders = [...childList.querySelectorAll("details")];
 
-            details.open = item.open !== false;
+            details.open = item.open === true;
             summaryColumn.className = "tree-column";
             summaryLabel.textContent = `${item.name}/`;
             summary.append(summaryColumn, summaryLabel);
