@@ -354,5 +354,15 @@
                 ]
             }
         ]
+    },
+    {
+        "name": "website",
+        "type": "folder",
+        "children": [
+            {
+                "name": "content.json",
+                "type": "file"
+            }
+        ]
     }
 ]

@@ -1,0 +1,398 @@
+{
+  "about": [
+    {
+      "key": "website1",
+      "title": "I'm Ali Emre.",
+      "highlight": "A software engineer with a passion for design.",
+      "description": "From a young age, I had a strong talent for drawing and a vivid imagination. Over time, I transformed this skill into digital design during computer classes, which also sparked my curiosity for technology. My passion for technology became the main reason I chose to pursue computer engineering, while my interest in design has continued to influence my work, especially in frontend development and creating better user experiences."
+    },
+    {
+      "key": "website2",
+      "title": "",
+      "highlight": "",
+      "description": "I'm an experienced full-stack software engineer focused on building reliable and practical systems. I work across frontend, backend, and infrastructure to deliver complete solutions. I care about clean architecture, maintainable code, and turning ideas into working products quickly. I enjoy AI-assisted development to rapidly prototype, iterate, and transform ideas into reliable tools."
+    }
+  ],
+  "emails": [
+    {
+      "key": "personal",
+      "email": "aliemrenebiler@gmail.com"
+    }
+  ],
+  "links": [
+    {
+      "key": "gitHub",
+      "url": "https://github.com/aliemrenebiler"
+    },
+    {
+      "key": "linkedIn",
+      "url": "https://www.linkedin.com/in/aliemrenebiler/"
+    }
+  ],
+  "experiences": [
+    {
+      "key": "vorkerAi",
+      "organization": "Vorker.ai",
+      "position": "Frontend Developer",
+      "url": "",
+      "start_date": "2025-12",
+      "description": "Working in a small, fast-moving team to build an AI-powered web application, collaborating closely on architecture decisions and feature development. Improved frontend structure and built reusable components, while implementing real-time data flows using WebSockets and APIs. In a startup environment where speed matters, I rely on AI-assisted development as a core part of my workflow, using tools like Cursor and Claude to prototype quickly, iterate with confidence, and keep up with a fast-paced release cycle."
+    },
+    {
+      "key": "nokia",
+      "organization": "Nokia",
+      "position": "Software Developer",
+      "url": "",
+      "start_date": "2022-11",
+      "end_date": "2025-08",
+      "description": "Collaborated closely with architects and cross-functional teams on system design and technical decisions, working full-stack across two Python-based network automation tools for SR Linux service routers: one an existing internal system modernization, the other a new external-facing application built from the ground up. Contributed new features and integrations to automate complex migration processes across different environments. Also developed a standalone Python script that connected to devices over SSH and automatically generated Word/PDF documentation, eliminating a previously manual reporting process. Designed reusable UI components and worked within Agile teams using Scrum, Kanban, and TDD practices. Maintained a Linux development environment using WSL and Ubuntu throughout. Supported interns and junior developers in onboarding."
+    }
+  ],
+  "projects": [
+    {
+      "key": "crcMlClassifier",
+      "name": "CRC ML Classifier",
+      "description": "Bachelor graduation thesis project developing a colorectal cancer classification tool using machine learning. Built a multi-stage Python and R pipeline covering data preprocessing, classifier training with grid search optimization, and survival analysis to identify potential biomarkers. Focused on building a reproducible data analysis pipeline as a practical and cost-effective alternative to traditional classification methods.",
+      "highlight": "Graduation Thesis",
+      "url": "https://github.com/aliemrenebiler/crc-ml-classifier",
+      "keywords": [],
+      "images": []
+    },
+    {
+      "key": "eyeControlledWheelchair",
+      "name": "Eye Controlled Wheelchair",
+      "description": "Developed an assistive system enabling people with spinal cord paralysis to control a wheelchair through eye movements. Used Dlib for facial landmark detection and OpenCV for real-time pupil tracking, translating eye direction into movement commands sent over Wi-Fi to an ESP32-based wheelchair prototype. A standalone Python application connecting computer vision with embedded hardware.",
+      "highlight": "",
+      "url": "https://github.com/aliemrenebiler/eye-controlled-wheelchair",
+      "keywords": [],
+      "images": []
+    },
+    {
+      "key": "handGesture2048",
+      "name": "2048 Hand Gesture",
+      "description": "Built a hand gesture-controlled version of the 2048 game as an embedded systems project. Uses a webcam and OpenCV to detect hand gestures in real time, translating movement direction into game controls. Originally developed on a Raspberry Pi 2, but runs on any Python-supported system.",
+      "highlight": "Embedded Systems Term Project",
+      "url": "https://github.com/aliemrenebiler/2048-hand-gesture",
+      "keywords": [],
+      "images": []
+    },
+    {
+      "key": "rgbulbApp",
+      "name": "RGBulb App",
+      "description": "An Android app built with Flutter to control an IoT RGB LED module made with NodeMCU and an RGB LED. The app uses the MQTT protocol to send LED control commands and can be operated from an external network.",
+      "highlight": "",
+      "url": "https://github.com/aliemrenebiler/rgbulb-app",
+      "keywords": [],
+      "images": [
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/rgbulb-app/home-1.jpg",
+          "alt": "RGBulb App Home View 1"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/rgbulb-app/home-2.jpg",
+          "alt": "RGBulb App Home View 2"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/rgbulb-app/control-1.jpg",
+          "alt": "RGBulb App Control View 1"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/rgbulb-app/control-2.jpg",
+          "alt": "RGBulb App Control View 2"
+        }
+      ]
+    },
+    {
+      "key": "fbwWebsite",
+      "name": "Fly By Wire AB Website",
+      "description": "The website was built with React, featuring a clean 2D outlined design with a coding font aesthetic. The result is a playful yet professional interface that reflects the company's innovative and technical spirit.",
+      "highlight": "",
+      "url": "https://www.flybywire.se",
+      "keywords": [],
+      "images": [
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/fbw-website/banner.png",
+          "alt": "Fly By Wire AB Website Banner"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/fbw-website/about-us.png",
+          "alt": "Fly By Wire AB Website About Us"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/fbw-website/clients-and-contact.png",
+          "alt": "Fly By Wire AB Website Clients and Contact"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/fbw-website/contact-form.png",
+          "alt": "Fly By Wire AB Website Contact Form"
+        }
+      ]
+    },
+    {
+      "key": "shuttleflyEffectGame",
+      "name": "Shuttlefly Effect Game",
+      "description": "A storytelling space game where players guide three astronauts back to Earth after a shuttle accident. Each astronaut has unique skills, and choices affect health, morale, oxygen, and resources. Inspired by Reigns.",
+      "highlight": "Computer Engineering Midterm Project",
+      "url": "https://github.com/aliemrenebiler/shuttlefly-effect-game",
+      "keywords": [],
+      "images": [
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/shuttlefly-effect/v2/main-menu.png",
+          "alt": "Shuttlefly Effect Game Main Menu"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/shuttlefly-effect/v2/prologue.png",
+          "alt": "Shuttlefly Effect Game Prologue"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/shuttlefly-effect/v2/character-selection.png",
+          "alt": "Shuttlefly Effect Game Character Selection"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/shuttlefly-effect/v2/scene-1.png",
+          "alt": "Shuttlefly Effect Game Scene 1"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/shuttlefly-effect/v2/scene-2.png",
+          "alt": "Shuttlefly Effect Game Scene 2"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/shuttlefly-effect/v2/character-info.png",
+          "alt": "Shuttlefly Effect Game Character Info"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/shuttlefly-effect/v2/ending.png",
+          "alt": "Shuttlefly Effect Game Ending"
+        }
+      ]
+    }
+  ],
+  "graphicDesigns": [
+    {
+      "key": "bklmun",
+      "name": "BKLMUN",
+      "description": "It's a Model United Nations event organized by a group of high school students. I served as Head of Press and also handled the graphic designs. All of the designs and the general concept were my original idea.",
+      "highlight": "",
+      "url": "",
+      "keywords": [],
+      "images": [
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/bklmun/logo.jpg",
+          "alt": "BKLMUN Logo"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/bklmun/cover.jpg",
+          "alt": "BKLMUN Cover"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/bklmun/flyer.jpg",
+          "alt": "BKLMUN Flyer"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/bklmun/placards.jpg",
+          "alt": "BKLMUN Placards"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/bklmun/badges.jpg",
+          "alt": "BKLMUN Badges"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/bklmun/committee-icon.jpg",
+          "alt": "BKLMUN Committee Icon"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/bklmun/certificates.jpg",
+          "alt": "BKLMUN Certificates"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/bklmun/event-ticket.jpg",
+          "alt": "BKLMUN Event Ticket"
+        }
+      ]
+    },
+    {
+      "key": "tedxYTU",
+      "name": "TEDx Yildiz Technical University",
+      "description": "It is part of the global TEDx initiative, created to share 'ideas worth spreading.' This event is organized by the student club SPARK, where I served as General Director. During my tenure, I contributed extensively through design work and also edited some of the talks, helping bring the event's vision to life visually.",
+      "highlight": "",
+      "url": "",
+      "keywords": [],
+      "images": [
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/tedx-ytu/reborn-poster.jpg",
+          "alt": "TEDx YTU Reborn Poster"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/tedx-ytu/reborn-backdrop.jpg",
+          "alt": "TEDx YTU Reborn Backdrop"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/tedx-ytu/reborn-banner.jpg",
+          "alt": "TEDx YTU Reborn Banner"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/tedx-ytu/out-of-order-poster.jpg",
+          "alt": "TEDx YTU Out Of Order Poster"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/tedx-ytu/the-mask-certificate.jpg",
+          "alt": "TEDx YTU The Mask Certificate"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/tedx-ytu/prints.jpg",
+          "alt": "TEDx YTU Prints"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/tedx-ytu/pennant.jpg",
+          "alt": "TEDx YTU Pennant"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/tedx-ytu/sticker.jpg",
+          "alt": "TEDx YTU Sticker"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/tedx-ytu/wristbands.jpg",
+          "alt": "TEDx YTU Wristbands"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/tedx-ytu/folder-cover.jpg",
+          "alt": "TEDx YTU Folder Cover"
+        }
+      ]
+    },
+    {
+      "key": "yfyp",
+      "name": "Yeni Fikirler, Yeni Projeler",
+      "description": "It was a science fair where creativity meets experimentation. I have been helping with the design voluntarily since 2019, creating various graphics including logos and posters. I also participated in stage shows, performing fun experiments and some explotions.",
+      "highlight": "",
+      "url": "",
+      "keywords": [],
+      "images": [
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/yfyp/logo.jpg",
+          "alt": "YFYP Logo"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/yfyp/poster.jpg",
+          "alt": "YFYP Poster"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/yfyp/invitation.jpg",
+          "alt": "YFYP Invitation"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/yfyp/banner.jpg",
+          "alt": "YFYP Banner"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/yfyp/badges.jpg",
+          "alt": "YFYP Badges"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/yfyp/headers.jpg",
+          "alt": "YFYP Headers"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/yfyp/certificates.jpg",
+          "alt": "YFYP Certificates"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/yfyp/flyer.jpg",
+          "alt": "YFYP Flyer"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/yfyp/symmetry-poster.jpg",
+          "alt": "YFYP Symmetry Poster"
+        }
+      ]
+    },
+    {
+      "key": "u4sYTU",
+      "name": "University 4Society @YTU",
+      "description": "It's an entrepreneurship hackathon. I volunteered as an organizer and designed Instagram posts as well as merch items like notebooks and pens.",
+      "highlight": "",
+      "url": "",
+      "keywords": [],
+      "images": [
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/u4s-ytu/poster.jpg",
+          "alt": "U4S YTU Poster"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/u4s-ytu/rollup.jpg",
+          "alt": "U4S YTU Rollup"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/u4s-ytu/flyer.jpg",
+          "alt": "U4S YTU Flyer"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/u4s-ytu/post-1.jpg",
+          "alt": "U4S YTU Post 1"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/u4s-ytu/post-2.jpg",
+          "alt": "U4S YTU Post 2"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/u4s-ytu/post-3.jpg",
+          "alt": "U4S YTU Post 3"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/u4s-ytu/notebook.jpg",
+          "alt": "U4S YTU Notebook"
+        }
+      ]
+    },
+    {
+      "key": "logoDesigns",
+      "name": "Logo Designs",
+      "description": "Logos I have designed for various projects and organizations. Some are actively in use, while others remain as concepts.",
+      "highlight": "",
+      "url": "",
+      "keywords": [],
+      "images": [
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/logo/dayico-logo.jpg",
+          "alt": "DayiCo Logo"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/logo/yildiz-cep-logo.jpg",
+          "alt": "Yildiz Cep Logo"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/logo/3-drops-logo.jpg",
+          "alt": "3 Drops Logo"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/logo/buffalo-logo.jpg",
+          "alt": "Buffalo Logo"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/logo/spilos-logo.jpg",
+          "alt": "Spilos Logo"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/logo/imparoo-logo.jpg",
+          "alt": "Imparoo Logo"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/logo/manrotek-logo.jpg",
+          "alt": "MANROTEK Logo"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/logo/rec-logo.jpg",
+          "alt": "REC Logo"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/logo/bal-turkuaz-logo.jpg",
+          "alt": "BAL Turkuaz Logo"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/logo/vanilyali-pamuk-seker-logo.jpg",
+          "alt": "Vanilyali Pamuk Seker Logo"
+        }
+      ]
+    }
+  ]
+}
