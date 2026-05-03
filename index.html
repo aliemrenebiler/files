@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ali Emre Nebiler - Files</title>
+    <style>
+        :root {
+            color-scheme: light dark;
+            --bg: #0d1117;
+            --card: #161b22;
+            --border: #30363d;
+            --text: #e6edf3;
+            --muted: #8b949e;
+            --link: #58a6ff;
+            --folder: #f2cc60;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            line-height: 1.5;
+        }
+
+        main {
+            width: min(920px, calc(100% - 32px));
+            margin: 0 auto;
+            padding: 48px 0;
+        }
+
+        header {
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            margin: 0 0 8px;
+            font-size: clamp(2rem, 4vw, 3rem);
+            line-height: 1.1;
+        }
+
+        p {
+            margin: 0;
+            color: var(--muted);
+        }
+
+        a {
+            color: var(--link);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .tree {
+            margin-top: 28px;
+            padding: 20px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            box-shadow: 0 16px 40px rgb(0 0 0 / 18%);
+        }
+
+        .tree ul {
+            margin: 0;
+            padding-left: 24px;
+            list-style: none;
+            border-left: 1px solid var(--border);
+        }
+
+        .tree > ul {
+            padding-left: 0;
+            border-left: 0;
+        }
+
+        .tree li {
+            position: relative;
+            margin: 8px 0;
+            padding-left: 20px;
+        }
+
+        .tree li::before {
+            content: "";
+            position: absolute;
+            top: 0.85em;
+            left: 0;
+            width: 12px;
+            border-top: 1px solid var(--border);
+        }
+
+        .tree > ul > li {
+            padding-left: 0;
+        }
+
+        .tree > ul > li::before {
+            display: none;
+        }
+
+        details {
+            margin: 0;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: 700;
+            color: var(--folder);
+        }
+
+        .file {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .file::before {
+            content: "image";
+            color: var(--muted);
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Files</h1>
+            <p>Public files by <a href="https://aliemrenebiler.com">Ali Emre Nebiler</a>.</p>
+        </header>
+
+        <nav class="tree" aria-label="File tree">
+            <ul>
+                <li>
+                    <details open>
+                        <summary>shuttlefly-effect/</summary>
+                        <ul>
+                            <li>
+                                <details open>
+                                    <summary>images/</summary>
+                                    <ul>
+                                        <li><a class="file" href="shuttlefly-effect/images/main-menu-v1.png">main-menu-v1.png</a></li>
+                                        <li><a class="file" href="shuttlefly-effect/images/main-menu-v2.png">main-menu-v2.png</a></li>
+                                        <li><a class="file" href="shuttlefly-effect/images/character-selection-v1.png">character-selection-v1.png</a></li>
+                                        <li><a class="file" href="shuttlefly-effect/images/character-selection-v2.png">character-selection-v2.png</a></li>
+                                        <li><a class="file" href="shuttlefly-effect/images/character-info-v2.png">character-info-v2.png</a></li>
+                                        <li><a class="file" href="shuttlefly-effect/images/prologue-v1.png">prologue-v1.png</a></li>
+                                        <li><a class="file" href="shuttlefly-effect/images/prologue-v2.png">prologue-v2.png</a></li>
+                                        <li><a class="file" href="shuttlefly-effect/images/scene-1-v1.png">scene-1-v1.png</a></li>
+                                        <li><a class="file" href="shuttlefly-effect/images/scene-1-v2.png">scene-1-v2.png</a></li>
+                                        <li><a class="file" href="shuttlefly-effect/images/scene-2-v1.png">scene-2-v1.png</a></li>
+                                        <li><a class="file" href="shuttlefly-effect/images/scene-2-v2.png">scene-2-v2.png</a></li>
+                                        <li><a class="file" href="shuttlefly-effect/images/ending-v1.png">ending-v1.png</a></li>
+                                        <li><a class="file" href="shuttlefly-effect/images/ending-v2.png">ending-v2.png</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </nav>
+    </main>
+</body>
+</html>
