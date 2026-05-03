@@ -1,0 +1,66 @@
+[
+    {
+        "name": "shuttlefly-effect",
+        "type": "folder",
+        "children": [
+            {
+                "name": "images",
+                "type": "folder",
+                "children": [
+                    {
+                        "name": "main-menu-v1.png",
+                        "type": "file"
+                    },
+                    {
+                        "name": "main-menu-v2.png",
+                        "type": "file"
+                    },
+                    {
+                        "name": "character-selection-v1.png",
+                        "type": "file"
+                    },
+                    {
+                        "name": "character-selection-v2.png",
+                        "type": "file"
+                    },
+                    {
+                        "name": "character-info-v2.png",
+                        "type": "file"
+                    },
+                    {
+                        "name": "prologue-v1.png",
+                        "type": "file"
+                    },
+                    {
+                        "name": "prologue-v2.png",
+                        "type": "file"
+                    },
+                    {
+                        "name": "scene-1-v1.png",
+                        "type": "file"
+                    },
+                    {
+                        "name": "scene-1-v2.png",
+                        "type": "file"
+                    },
+                    {
+                        "name": "scene-2-v1.png",
+                        "type": "file"
+                    },
+                    {
+                        "name": "scene-2-v2.png",
+                        "type": "file"
+                    },
+                    {
+                        "name": "ending-v1.png",
+                        "type": "file"
+                    },
+                    {
+                        "name": "ending-v2.png",
+                        "type": "file"
+                    }
+                ]
+            }
+        ]
+    }
+]

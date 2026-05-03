@@ -114,6 +114,11 @@
             color: var(--muted);
             font-size: 0.8rem;
         }
+
+        .tree-status {
+            margin: 0;
+            color: var(--muted);
+        }
     </style>
 </head>
 <body>
@@ -124,36 +129,72 @@
         </header>
 
         <nav class="tree" aria-label="File tree">
-            <ul>
-                <li>
-                    <details open>
-                        <summary>shuttlefly-effect/</summary>
-                        <ul>
-                            <li>
-                                <details open>
-                                    <summary>images/</summary>
-                                    <ul>
-                                        <li><a class="file" href="shuttlefly-effect/images/main-menu-v1.png">main-menu-v1.png</a></li>
-                                        <li><a class="file" href="shuttlefly-effect/images/main-menu-v2.png">main-menu-v2.png</a></li>
-                                        <li><a class="file" href="shuttlefly-effect/images/character-selection-v1.png">character-selection-v1.png</a></li>
-                                        <li><a class="file" href="shuttlefly-effect/images/character-selection-v2.png">character-selection-v2.png</a></li>
-                                        <li><a class="file" href="shuttlefly-effect/images/character-info-v2.png">character-info-v2.png</a></li>
-                                        <li><a class="file" href="shuttlefly-effect/images/prologue-v1.png">prologue-v1.png</a></li>
-                                        <li><a class="file" href="shuttlefly-effect/images/prologue-v2.png">prologue-v2.png</a></li>
-                                        <li><a class="file" href="shuttlefly-effect/images/scene-1-v1.png">scene-1-v1.png</a></li>
-                                        <li><a class="file" href="shuttlefly-effect/images/scene-1-v2.png">scene-1-v2.png</a></li>
-                                        <li><a class="file" href="shuttlefly-effect/images/scene-2-v1.png">scene-2-v1.png</a></li>
-                                        <li><a class="file" href="shuttlefly-effect/images/scene-2-v2.png">scene-2-v2.png</a></li>
-                                        <li><a class="file" href="shuttlefly-effect/images/ending-v1.png">ending-v1.png</a></li>
-                                        <li><a class="file" href="shuttlefly-effect/images/ending-v2.png">ending-v2.png</a></li>
-                                    </ul>
-                                </details>
-                            </li>
-                        </ul>
-                    </details>
-                </li>
-            </ul>
+            <p class="tree-status">Loading files...</p>
         </nav>
     </main>
+
+    <script>
+        const tree = document.querySelector(".tree");
+
+        function createFileNode(item, parentPath) {
+            const listItem = document.createElement("li");
+            const link = document.createElement("a");
+
+            link.className = "file";
+            link.href = `${parentPath}${item.name}`;
+            link.textContent = item.name;
+
+            listItem.append(link);
+
+            return listItem;
+        }
+
+        function createFolderNode(item, parentPath) {
+            const listItem = document.createElement("li");
+            const details = document.createElement("details");
+            const summary = document.createElement("summary");
+            const folderPath = `${parentPath}${item.name}/`;
+            const childList = createTree(item.children || [], folderPath);
+
+            details.open = item.open !== false;
+            summary.textContent = `${item.name}/`;
+
+            details.append(summary, childList);
+            listItem.append(details);
+
+            return listItem;
+        }
+
+        function createTree(items, parentPath = "") {
+            const list = document.createElement("ul");
+
+            items.forEach((item) => {
+                const node = item.type === "folder"
+                    ? createFolderNode(item, parentPath)
+                    : createFileNode(item, parentPath);
+                list.append(node);
+            });
+
+            return list;
+        }
+
+        fetch("files.json")
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error("Could not load files.json");
+                }
+
+                return response.json();
+            })
+            .then((files) => {
+                tree.replaceChildren(createTree(files));
+            })
+            .catch(() => {
+                const message = document.createElement("p");
+                message.className = "tree-status";
+                message.textContent = "Could not load the file list.";
+                tree.replaceChildren(message);
+            });
+    </script>
 </body>
 </html>
