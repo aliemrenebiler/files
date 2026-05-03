@@ -42,9 +42,13 @@
                 ]
             },
             {
-                "name": "fbw-web",
+                "name": "fbw-website",
                 "type": "folder",
                 "children": [
+                    {
+                        "name": "about-us.png",
+                        "type": "file"
+                    },
                     {
                         "name": "banner.png",
                         "type": "file"
@@ -55,10 +59,6 @@
                     },
                     {
                         "name": "contact-form.png",
-                        "type": "file"
-                    },
-                    {
-                        "name": "info.png",
                         "type": "file"
                     }
                 ]
