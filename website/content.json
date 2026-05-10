@@ -36,7 +36,7 @@
       "position": "Frontend Developer",
       "url": "",
       "start_date": "2025-12",
-      "description": "Working in a small, fast-moving team to build an AI-powered web application, collaborating closely on architecture decisions and feature development. Improved frontend structure and built reusable components, while implementing real-time data flows using WebSockets and APIs. In a startup environment where speed matters, I rely on AI-assisted development as a core part of my workflow, using tools like Cursor and Claude to prototype quickly, iterate with confidence, and keep up with a fast-paced release cycle."
+      "description": "Working on an AI coworker platform for small businesses with integrations. Resolved critical WebSocket connectivity issues, improving connection stability and handling reconnection logic across various edge cases. Refactored the codebase progressively, introducing type safety without disrupting an actively used production app. Currently leading a full UI redesign, giving the product a consistent visual identity that aligns with the company's branding. AI-assisted development is a core part of the workflow, used to prototype quickly and iterate with confidence in a fast-paced startup environment."
     },
     {
       "key": "nokia",
