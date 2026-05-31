@@ -582,6 +582,20 @@
     ]
   },
   {
+    "name": "motion-projects",
+    "type": "folder",
+    "children": [
+      {
+        "name": "index.html",
+        "type": "file"
+      },
+      {
+        "name": "videos.json",
+        "type": "file"
+      }
+    ]
+  },
+  {
     "name": "website",
     "type": "folder",
     "children": [
