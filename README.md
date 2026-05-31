@@ -9,7 +9,7 @@ This repository is rendered as a simple file browser with `index.html`.
 `index.html` loads `files.json` in the browser:
 
 ```js
-fetch('files.json');
+fetch("files.json");
 ```
 
 Then it reads the folder/file structure from that JSON and builds the visible file tree. File links are generated automatically from their parent folders, so each file only needs a `name` and `type`.
@@ -22,9 +22,9 @@ Use `type: "folder"` for folders:
 
 ```json
 {
-    "name": "folder-name",
-    "type": "folder",
-    "children": []
+  "name": "folder-name",
+  "type": "folder",
+  "children": []
 }
 ```
 
@@ -32,8 +32,8 @@ Use `type: "file"` for files:
 
 ```json
 {
-    "name": "file-name.png",
-    "type": "file"
+  "name": "file-name.png",
+  "type": "file"
 }
 ```
 
@@ -41,22 +41,22 @@ For example, this structure:
 
 ```json
 [
-    {
-        "name": "project-1",
+  {
+    "name": "project-1",
+    "type": "folder",
+    "children": [
+      {
+        "name": "images",
         "type": "folder",
         "children": [
-            {
-                "name": "images",
-                "type": "folder",
-                "children": [
-                    {
-                        "name": "image-1.png",
-                        "type": "file"
-                    }
-                ]
-            }
+          {
+            "name": "image-1.png",
+            "type": "file"
+          }
         ]
-    }
+      }
+    ]
+  }
 ]
 ```
 

@@ -1,319 +1,327 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ali Emre Nebiler - Files</title>
     <style>
-        :root {
-            color-scheme: light dark;
-            --bg: #0d1117;
-            --card: #161b22;
-            --border: #30363d;
-            --text: #e6edf3;
-            --muted: #8b949e;
-            --link: #58a6ff;
-        }
+      :root {
+        color-scheme: light dark;
+        --bg: #0d1117;
+        --card: #161b22;
+        --border: #30363d;
+        --text: #e6edf3;
+        --muted: #8b949e;
+        --link: #58a6ff;
+      }
 
-        * {
-            box-sizing: border-box;
-        }
+      * {
+        box-sizing: border-box;
+      }
 
-        body {
-            margin: 0;
-            min-height: 100vh;
-            background: var(--bg);
-            color: var(--text);
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            line-height: 1.5;
-        }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: var(--bg);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.5;
+      }
 
-        main {
-            width: min(920px, calc(100% - 32px));
-            margin: 0 auto;
-            padding: 48px 0;
-        }
+      main {
+        width: min(920px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 48px 0;
+      }
 
-        header {
-            margin-bottom: 24px;
-        }
+      header {
+        margin-bottom: 24px;
+      }
 
-        h1 {
-            margin: 0 0 8px;
-            font-size: clamp(2rem, 4vw, 3rem);
-            line-height: 1.1;
-        }
+      h1 {
+        margin: 0 0 8px;
+        font-size: clamp(2rem, 4vw, 3rem);
+        line-height: 1.1;
+      }
 
-        p {
-            margin: 0;
-            color: var(--muted);
-        }
+      p {
+        margin: 0;
+        color: var(--muted);
+      }
 
-        a {
-            color: var(--link);
-            text-decoration: none;
-        }
+      a {
+        color: var(--link);
+        text-decoration: none;
+      }
 
-        a:hover {
-            text-decoration: underline;
-        }
+      a:hover {
+        text-decoration: underline;
+      }
 
-        .tree {
-            margin-top: 28px;
-            padding: 20px;
-            background: var(--card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            box-shadow: 0 16px 40px rgb(0 0 0 / 18%);
-        }
+      .tree {
+        margin-top: 28px;
+        padding: 20px;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        box-shadow: 0 16px 40px rgb(0 0 0 / 18%);
+      }
 
-        .tree ul {
-            margin: 0;
-            padding-left: 0;
-            list-style: none;
-        }
+      .tree ul {
+        margin: 0;
+        padding-left: 0;
+        list-style: none;
+      }
 
-        .tree > ul {
-            margin-left: 0;
-            padding-left: 0;
-            border-left: 0;
-        }
+      .tree > ul {
+        margin-left: 0;
+        padding-left: 0;
+        border-left: 0;
+      }
 
-        .tree li {
-            margin: 8px 0;
-            padding-left: 0;
-        }
+      .tree li {
+        margin: 8px 0;
+        padding-left: 0;
+      }
 
-        .tree > ul > li {
-            padding-left: 0;
-        }
+      .tree > ul > li {
+        padding-left: 0;
+      }
 
-        details {
-            margin: 0;
-        }
+      details {
+        margin: 0;
+      }
 
-        summary {
-            display: inline-grid;
-            grid-template-columns: 20px auto;
-            gap: 8px;
-            align-items: center;
-            cursor: pointer;
-            font-weight: 700;
-            color: var(--text);
-            list-style: none;
-        }
+      summary {
+        display: inline-grid;
+        grid-template-columns: 20px auto;
+        gap: 8px;
+        align-items: center;
+        cursor: pointer;
+        font-weight: 700;
+        color: var(--text);
+        list-style: none;
+      }
 
-        summary::marker,
-        summary::-webkit-details-marker {
-            display: none;
-            content: "";
-        }
+      summary::marker,
+      summary::-webkit-details-marker {
+        display: none;
+        content: "";
+      }
 
-        .tree-column {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            align-self: stretch;
-            width: 20px;
-        }
+      .tree-column {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: stretch;
+        width: 20px;
+      }
 
-        summary .tree-column::before {
-            content: "";
-            width: 0.45rem;
-            height: 0.45rem;
-            border-top: 2px solid var(--muted);
-            border-right: 2px solid var(--muted);
-            transform: rotate(45deg);
-            transition: transform 120ms ease;
-        }
+      summary .tree-column::before {
+        content: "";
+        width: 0.45rem;
+        height: 0.45rem;
+        border-top: 2px solid var(--muted);
+        border-right: 2px solid var(--muted);
+        transform: rotate(45deg);
+        transition: transform 120ms ease;
+      }
 
-        details[open] > summary .tree-column::before {
-            transform: rotate(135deg);
-        }
+      details[open] > summary .tree-column::before {
+        transform: rotate(135deg);
+      }
 
-        .tree-children {
-            display: grid;
-            grid-template-columns: 20px minmax(0, 1fr);
-            gap: 8px;
-            margin-top: 8px;
-        }
+      .tree-children {
+        display: grid;
+        grid-template-columns: 20px minmax(0, 1fr);
+        gap: 8px;
+        margin-top: 8px;
+      }
 
-        .tree-line::before {
-            content: "";
-            width: 1px;
-            min-height: 100%;
-            background: var(--border);
-        }
+      details:not([open]) > .tree-children {
+        display: none;
+      }
 
-        .folder-action {
-            margin: 8px 0;
-        }
+      .tree-line::before {
+        content: "";
+        width: 1px;
+        min-height: 100%;
+        background: var(--border);
+      }
 
-        .collapse-folder {
-            padding: 3px 8px;
-            border: 1px solid var(--border);
-            border-radius: 999px;
-            background: transparent;
-            color: var(--muted);
-            cursor: pointer;
-            font: inherit;
-            font-size: 0.75rem;
-            font-weight: 600;
-        }
+      .folder-action {
+        margin: 8px 0;
+      }
 
-        .collapse-folder:hover,
-        .collapse-folder:focus-visible {
-            color: var(--text);
-            border-color: var(--muted);
-        }
+      .collapse-folder {
+        padding: 3px 8px;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        background: transparent;
+        color: var(--muted);
+        cursor: pointer;
+        font: inherit;
+        font-size: 0.75rem;
+        font-weight: 600;
+      }
 
-        .file {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
+      .collapse-folder:hover,
+      .collapse-folder:focus-visible {
+        color: var(--text);
+        border-color: var(--muted);
+      }
 
-        .file::before {
-            content: "image";
-            color: var(--muted);
-            font-size: 0.8rem;
-        }
+      .file {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
 
-        .tree-status {
-            margin: 0;
-            color: var(--muted);
-        }
+      .file::before {
+        content: "image";
+        color: var(--muted);
+        font-size: 0.8rem;
+      }
+
+      .tree-status {
+        margin: 0;
+        color: var(--muted);
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <header>
-            <h1>Files</h1>
-            <p>Public files by <a href="https://aliemrenebiler.com">Ali Emre Nebiler</a>.</p>
-        </header>
+      <header>
+        <h1>Files</h1>
+        <p>
+          Public files by
+          <a href="https://aliemrenebiler.com">Ali Emre Nebiler</a>.
+        </p>
+      </header>
 
-        <nav class="tree" aria-label="File tree">
-            <p class="tree-status">Loading files...</p>
-        </nav>
+      <nav class="tree" aria-label="File tree">
+        <p class="tree-status">Loading files...</p>
+      </nav>
     </main>
 
     <script>
-        const tree = document.querySelector(".tree");
+      const tree = document.querySelector(".tree");
 
-        function createFileNode(item, parentPath) {
-            const listItem = document.createElement("li");
-            const link = document.createElement("a");
+      function createFileNode(item, parentPath) {
+        const listItem = document.createElement("li");
+        const link = document.createElement("a");
 
-            link.className = "file";
-            link.href = `${parentPath}${item.name}`;
-            link.textContent = item.name;
+        link.className = "file";
+        link.href = `${parentPath}${item.name}`;
+        link.textContent = item.name;
 
-            listItem.append(link);
+        listItem.append(link);
 
-            return listItem;
+        return listItem;
+      }
+
+      function createFolderToggleButton(folders) {
+        const button = document.createElement("button");
+        const updateButton = () => {
+          const allCollapsed = folders.every((folder) => !folder.open);
+          button.textContent = allCollapsed ? "Expand All" : "Collapse All";
+          button.setAttribute(
+            "aria-label",
+            `${allCollapsed ? "Expand" : "Collapse"} all folders`,
+          );
+        };
+
+        button.className = "collapse-folder";
+        button.type = "button";
+        button.addEventListener("click", () => {
+          const allCollapsed = folders.every((folder) => !folder.open);
+          folders.forEach((folder) => {
+            folder.open = allCollapsed;
+          });
+          updateButton();
+        });
+        folders.forEach((folder) => {
+          folder.addEventListener("toggle", updateButton);
+        });
+        updateButton();
+
+        return button;
+      }
+
+      function createFolderNode(item, parentPath) {
+        const listItem = document.createElement("li");
+        const details = document.createElement("details");
+        const summary = document.createElement("summary");
+        const summaryColumn = document.createElement("span");
+        const summaryLabel = document.createElement("span");
+        const childrenRow = document.createElement("div");
+        const childrenColumn = document.createElement("div");
+        const folderPath = `${parentPath}${item.name}/`;
+        const childList = createTree(item.children || [], folderPath);
+
+        details.open = item.open === true;
+        summaryColumn.className = "tree-column";
+        summaryLabel.textContent = `${item.name}/`;
+        summary.append(summaryColumn, summaryLabel);
+
+        childrenRow.className = "tree-children";
+        childrenColumn.className = "tree-column tree-line";
+        childrenRow.append(childrenColumn, childList);
+
+        details.append(summary, childrenRow);
+        listItem.append(details);
+
+        return listItem;
+      }
+
+      function createTree(items, parentPath = "") {
+        const list = document.createElement("ul");
+
+        items.forEach((item) => {
+          const node =
+            item.type === "folder"
+              ? createFolderNode(item, parentPath)
+              : createFileNode(item, parentPath);
+          list.append(node);
+        });
+
+        return list;
+      }
+
+      function renderFiles(files) {
+        const fileList = createTree(files);
+        const folders = [...fileList.querySelectorAll("details")];
+
+        if (folders.length === 0) {
+          tree.replaceChildren(fileList);
+          return;
         }
 
-        function createFolderToggleButton(folders) {
-            const button = document.createElement("button");
-            const updateButton = () => {
-                const allCollapsed = folders.every((folder) => !folder.open);
-                button.textContent = allCollapsed ? "Expand All" : "Collapse All";
-                button.setAttribute(
-                    "aria-label",
-                    `${allCollapsed ? "Expand" : "Collapse"} all folders`,
-                );
-            };
+        const action = document.createElement("li");
+        action.className = "folder-action";
+        action.append(createFolderToggleButton(folders));
+        fileList.prepend(action);
+        tree.replaceChildren(fileList);
+      }
 
-            button.className = "collapse-folder";
-            button.type = "button";
-            button.addEventListener("click", () => {
-                const allCollapsed = folders.every((folder) => !folder.open);
-                folders.forEach((folder) => {
-                    folder.open = allCollapsed;
-                });
-                updateButton();
-            });
-            folders.forEach((folder) => {
-                folder.addEventListener("toggle", updateButton);
-            });
-            updateButton();
+      fetch("files.json")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Could not load files.json");
+          }
 
-            return button;
-        }
-
-        function createFolderNode(item, parentPath) {
-            const listItem = document.createElement("li");
-            const details = document.createElement("details");
-            const summary = document.createElement("summary");
-            const summaryColumn = document.createElement("span");
-            const summaryLabel = document.createElement("span");
-            const childrenRow = document.createElement("div");
-            const childrenColumn = document.createElement("div");
-            const folderPath = `${parentPath}${item.name}/`;
-            const childList = createTree(item.children || [], folderPath);
-
-            details.open = item.open === true;
-            summaryColumn.className = "tree-column";
-            summaryLabel.textContent = `${item.name}/`;
-            summary.append(summaryColumn, summaryLabel);
-
-            childrenRow.className = "tree-children";
-            childrenColumn.className = "tree-column tree-line";
-            childrenRow.append(childrenColumn, childList);
-
-            details.append(summary, childrenRow);
-            listItem.append(details);
-
-            return listItem;
-        }
-
-        function createTree(items, parentPath = "") {
-            const list = document.createElement("ul");
-
-            items.forEach((item) => {
-                const node = item.type === "folder"
-                    ? createFolderNode(item, parentPath)
-                    : createFileNode(item, parentPath);
-                list.append(node);
-            });
-
-            return list;
-        }
-
-        function renderFiles(files) {
-            const fileList = createTree(files);
-            const folders = [...fileList.querySelectorAll("details")];
-
-            if (folders.length === 0) {
-                tree.replaceChildren(fileList);
-                return;
-            }
-
-            const action = document.createElement("li");
-            action.className = "folder-action";
-            action.append(createFolderToggleButton(folders));
-            fileList.prepend(action);
-            tree.replaceChildren(fileList);
-        }
-
-        fetch("files.json")
-            .then((response) => {
-                if (!response.ok) {
-                    throw new Error("Could not load files.json");
-                }
-
-                return response.json();
-            })
-            .then((files) => {
-                renderFiles(files);
-            })
-            .catch(() => {
-                const message = document.createElement("p");
-                message.className = "tree-status";
-                message.textContent = "Could not load the file list.";
-                tree.replaceChildren(message);
-            });
+          return response.json();
+        })
+        .then((files) => {
+          renderFiles(files);
+        })
+        .catch(() => {
+          const message = document.createElement("p");
+          message.className = "tree-status";
+          message.textContent = "Could not load the file list.";
+          tree.replaceChildren(message);
+        });
     </script>
-</body>
+  </body>
 </html>
