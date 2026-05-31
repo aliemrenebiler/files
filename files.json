@@ -336,20 +336,6 @@
         ]
       },
       {
-        "name": "motion-projects",
-        "type": "folder",
-        "children": [
-          {
-            "name": "index.html",
-            "type": "file"
-          },
-          {
-            "name": "videos.json",
-            "type": "file"
-          }
-        ]
-      },
-      {
         "name": "rgbulb-app",
         "type": "folder",
         "children": [

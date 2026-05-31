@@ -394,5 +394,39 @@
         }
       ]
     }
+  ],
+  "motionGraphics": [
+    {
+      "key": "tedxYTURebornTrailer",
+      "name": "TEDx Yildiz Technical University \"Reborn\" Trailer",
+      "description": "",
+      "highlight": "",
+      "url": "https://www.youtube.com/embed/MytPdqqk65Q",
+      "keywords": []
+    },
+    {
+      "key": "tedxYTUTheMaskIntro",
+      "name": "TEDx Yildiz Technical University \"The Mask\" Intro",
+      "description": "",
+      "highlight": "",
+      "url": "https://www.youtube.com/embed/Pit0Xq2nR08",
+      "keywords": []
+    },
+    {
+      "key": "thriftyGreenhouseNarratedAnimation",
+      "name": "Thrifty Greenhouse Narrated Animation",
+      "description": "",
+      "highlight": "",
+      "url": "https://www.youtube.com/embed/O2aPrIDHJzk",
+      "keywords": []
+    },
+    {
+      "key": "weVisionaryAkademiIntro",
+      "name": "WE Visionary Akademi Intro",
+      "description": "",
+      "highlight": "",
+      "url": "https://www.youtube.com/embed/9VhRnFbWrcA",
+      "keywords": []
+    }
   ]
 }
