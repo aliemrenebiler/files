@@ -42,7 +42,7 @@ For example, this structure:
 ```json
 [
     {
-        "name": "shuttlefly-effect",
+        "name": "project-1",
         "type": "folder",
         "children": [
             {
@@ -50,7 +50,7 @@ For example, this structure:
                 "type": "folder",
                 "children": [
                     {
-                        "name": "main-menu-v1.png",
+                        "name": "image-1.png",
                         "type": "file"
                     }
                 ]
@@ -63,7 +63,7 @@ For example, this structure:
 Creates this link:
 
 ```text
-shuttlefly-effect/images/main-menu-v1.png
+project-1/images/image-1.png
 ```
 
 ## Notes
