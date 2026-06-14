@@ -436,15 +436,18 @@
   "mapGroups": [
     {
       "key": "stockholm",
-      "name": "Stockholm 🇸🇪"
+      "name": "Stockholm 🇸🇪",
+      "description": "Whether under the midnight sun or in the endless darkness, there is always good cafe options thanks to the fika culture. Nature is close by, and the city is designed around that, with water and green spaces everywhere."
     },
     {
       "key": "istanbul",
-      "name": "İstanbul 🇹🇷"
+      "name": "İstanbul 🇹🇷",
+      "description": "It is a crowded city and often expensive, yet it is full of hidden affordable options. The city changes at an incredible pace, with new places and experiences appearing almost every week. Chaotic at times, but truly one of a kind."
     },
     {
       "key": "izmir",
-      "name": "İzmir 🇹🇷"
+      "name": "İzmir 🇹🇷",
+      "description": "It is a chill and warm city, with plenty of places to swim and enjoy the coast. Life feels more stable here, with good options without the rush."
     },
     {
       "key": "other",
@@ -454,344 +457,230 @@
   "maps": [
     {
       "key": "stockholmRestaurants",
-      "group": {
-        "key": "stockholm",
-        "name": "Stockholm 🇸🇪"
-      },
       "name": "Restaurants 🍴",
+      "groupKey": "stockholm",
       "url": "https://maps.app.goo.gl/fjErRgnkrT6LGVEs9"
     },
     {
       "key": "stockholmBars",
-      "group": {
-        "key": "stockholm",
-        "name": "Stockholm 🇸🇪"
-      },
       "name": "Bars 🍸",
+      "groupKey": "stockholm",
       "url": "https://maps.app.goo.gl/RS97wkzPiY5wSn2C9"
     },
     {
       "key": "stockholmCafes",
-      "group": {
-        "key": "stockholm",
-        "name": "Stockholm 🇸🇪"
-      },
       "name": "Cafes ☕️",
+      "groupKey": "stockholm",
       "url": "https://maps.app.goo.gl/7agR56tfRQNLoPit6"
     },
     {
       "key": "stockholmDesserts",
-      "group": {
-        "key": "stockholm",
-        "name": "Stockholm 🇸🇪"
-      },
       "name": "Desserts 🍪",
+      "groupKey": "stockholm",
       "url": "https://maps.app.goo.gl/qjpN21cxHm1LRvKL8"
     },
     {
       "key": "stockholmSights",
-      "group": {
-        "key": "stockholm",
-        "name": "Stockholm 🇸🇪"
-      },
       "name": "Sights ⭐️",
+      "groupKey": "stockholm",
       "url": "https://maps.app.goo.gl/GhqeBqmncdRfLfFWA"
     },
     {
       "key": "stockholmParks",
-      "group": {
-        "key": "stockholm",
-        "name": "Stockholm 🇸🇪"
-      },
       "name": "Parks 🌳",
+      "groupKey": "stockholm",
       "url": "https://maps.app.goo.gl/fjErRgnkrT6LGVEs9"
     },
     {
       "key": "stockholmHistorical",
-      "group": {
-        "key": "stockholm",
-        "name": "Stockholm 🇸🇪"
-      },
       "name": "Historical 🏛️",
+      "groupKey": "stockholm",
       "url": "https://maps.app.goo.gl/fjErRgnkrT6LGVEs9"
     },
     {
       "key": "stockholmShopping",
-      "group": {
-        "key": "stockholm",
-        "name": "Stockholm 🇸🇪"
-      },
       "name": "Shopping 🛍️",
+      "groupKey": "stockholm",
       "url": "https://maps.app.goo.gl/fjErRgnkrT6LGVEs9"
     },
     {
       "key": "istanbulBreakfast",
-      "group": {
-        "key": "istanbul",
-        "name": "İstanbul 🇹🇷"
-      },
       "name": "Breakfast 🍳",
+      "groupKey": "istanbul",
       "url": "https://maps.app.goo.gl/1UUbwbJUHxZDPiEW7"
     },
     {
       "key": "istanbulRestaurants",
-      "group": {
-        "key": "istanbul",
-        "name": "İstanbul 🇹🇷"
-      },
       "name": "Restaurants 🍴",
+      "groupKey": "istanbul",
       "url": "https://maps.app.goo.gl/dyj24qcPCST2miHv5"
     },
     {
       "key": "istanbulBars",
-      "group": {
-        "key": "istanbul",
-        "name": "İstanbul 🇹🇷"
-      },
       "name": "Bars 🍸",
+      "groupKey": "istanbul",
       "url": "https://maps.app.goo.gl/y8Pg2awqVv8jUomC9"
     },
     {
       "key": "istanbulCafes",
-      "group": {
-        "key": "istanbul",
-        "name": "İstanbul 🇹🇷"
-      },
       "name": "Cafes ☕️",
+      "groupKey": "istanbul",
       "url": "https://maps.app.goo.gl/Nj2F2XTrjYTDmbng6"
     },
     {
       "key": "istanbulDesserts",
-      "group": {
-        "key": "istanbul",
-        "name": "İstanbul 🇹🇷"
-      },
       "name": "Desserts 🍪",
+      "groupKey": "istanbul",
       "url": "https://maps.app.goo.gl/ubuJfntLRDwKDngs9"
     },
     {
       "key": "istanbulSights",
-      "group": {
-        "key": "istanbul",
-        "name": "İstanbul 🇹🇷"
-      },
       "name": "Sights ⭐️",
+      "groupKey": "istanbul",
       "url": "https://maps.app.goo.gl/JbpDE5V44pz4ZW4i8"
     },
     {
       "key": "istanbulHistorical",
-      "group": {
-        "key": "istanbul",
-        "name": "İstanbul 🇹🇷"
-      },
       "name": "Historical 🏛️",
+      "groupKey": "istanbul",
       "url": "https://maps.app.goo.gl/fqq1Z3nhYaCGJXJC6"
     },
     {
       "key": "istanbulShopping",
-      "group": {
-        "key": "istanbul",
-        "name": "İstanbul 🇹🇷"
-      },
       "name": "Shopping 🛍️",
+      "groupKey": "istanbul",
       "url": "https://maps.app.goo.gl/5jLTEnTenUui4YPk9"
     },
     {
       "key": "izmirBreakfast",
-      "group": {
-        "key": "izmir",
-        "name": "İzmir 🇹🇷"
-      },
       "name": "Breakfast 🍳",
+      "groupKey": "izmir",
       "url": "https://maps.app.goo.gl/3DcRBM1RSwnqKix8A"
     },
     {
       "key": "izmirRestaurants",
-      "group": {
-        "key": "izmir",
-        "name": "İzmir 🇹🇷"
-      },
       "name": "Restaurants 🍴",
+      "groupKey": "izmir",
       "url": "https://maps.app.goo.gl/UXAUNnDDYk3SikUw5"
     },
     {
       "key": "izmirBars",
-      "group": {
-        "key": "izmir",
-        "name": "İzmir 🇹🇷"
-      },
       "name": "Bars 🍸",
+      "groupKey": "izmir",
       "url": "https://maps.app.goo.gl/jdzk398KnvCZNW4LA"
     },
     {
       "key": "izmirWinery",
-      "group": {
-        "key": "izmir",
-        "name": "İzmir 🇹🇷"
-      },
       "name": "Winery 🍷",
+      "groupKey": "izmir",
       "url": "https://maps.app.goo.gl/qD52vNgP8q3BT7Pe6"
     },
     {
       "key": "izmirCafes",
-      "group": {
-        "key": "izmir",
-        "name": "İzmir 🇹🇷"
-      },
       "name": "Cafes ☕️",
+      "groupKey": "izmir",
       "url": "https://maps.app.goo.gl/JibedEe2HxLizL3N8"
     },
     {
       "key": "izmirDesserts",
-      "group": {
-        "key": "izmir",
-        "name": "İzmir 🇹🇷"
-      },
       "name": "Desserts 🍪",
+      "groupKey": "izmir",
       "url": "https://maps.app.goo.gl/u2c7nZ7fJFa7b5fH6"
     },
     {
       "key": "izmirSeasides",
-      "group": {
-        "key": "izmir",
-        "name": "İzmir 🇹🇷"
-      },
       "name": "Seasides 🏖️",
+      "groupKey": "izmir",
       "url": "https://maps.app.goo.gl/W7sz88eihMtXK7SM6"
     },
     {
       "key": "izmirSights",
-      "group": {
-        "key": "izmir",
-        "name": "İzmir 🇹🇷"
-      },
       "name": "Sights ⭐️",
+      "groupKey": "izmir",
       "url": "https://maps.app.goo.gl/7Zg1G3WCrabB41957"
     },
     {
       "key": "izmirHistorical",
-      "group": {
-        "key": "izmir",
-        "name": "İzmir 🇹🇷"
-      },
       "name": "Historical 🏛️",
+      "groupKey": "izmir",
       "url": "https://maps.app.goo.gl/ciRznDcNvzCadu81A"
     },
     {
       "key": "london",
-      "group": {
-        "key": "other",
-        "name": "Other"
-      },
       "name": "London 🇬🇧",
+      "groupKey": "other",
       "url": "https://maps.app.goo.gl/VYUaFnaLaSu3ta2i8"
     },
     {
       "key": "edinburgh",
-      "group": {
-        "key": "other",
-        "name": "Other"
-      },
       "name": "Edinburgh 🇬🇧",
+      "groupKey": "other",
       "url": "https://maps.app.goo.gl/vqULZgrfrTVjRNkg8"
     },
     {
       "key": "amsterdam",
-      "group": {
-        "key": "other",
-        "name": "Other"
-      },
       "name": "Amsterdam 🇳🇱",
+      "groupKey": " other",
       "url": "https://maps.app.goo.gl/PbNSXeDFYwvw2QFH7"
     },
     {
       "key": "vienna",
-      "group": {
-        "key": "other",
-        "name": "Other"
-      },
       "name": "Vienna 🇦🇹",
+      "groupKey": "other",
       "url": "https://maps.app.goo.gl/Wv3nkUssYPPhJi8Z8"
     },
     {
       "key": "hallstatt",
-      "group": {
-        "key": "other",
-        "name": "Other"
-      },
       "name": "Hallstatt 🇦🇹",
+      "groupKey": "other",
       "url": "https://maps.app.goo.gl/V4d29MySm4EnaPa86"
     },
     {
       "key": "krakow",
-      "group": {
-        "key": "other",
-        "name": "Other"
-      },
       "name": "Krakow 🇵🇱",
+      "groupKey": "other",
       "url": "https://maps.app.goo.gl/iZjqF2W2EZXSjG9k8"
     },
     {
       "key": "samos",
-      "group": {
-        "key": "other",
-        "name": "Other"
-      },
       "name": "Samos 🇬🇷",
+      "groupKey": "other",
       "url": "https://maps.app.goo.gl/XEiUyeW8C1sKxFQn7"
     },
     {
       "key": "belgrade",
-      "group": {
-        "key": "other",
-        "name": "Other"
-      },
       "name": "Belgrade 🇷🇸",
+      "groupKey": "other",
       "url": "https://maps.app.goo.gl/3ySB5gBsAuVdHRwL6"
     },
     {
       "key": "noviSad",
-      "group": {
-        "key": "other",
-        "name": "Other"
-      },
       "name": "Novi Sad 🇷🇸",
+      "groupKey": "other",
       "url": "https://maps.app.goo.gl/cHuCn5FHEbBEqC3SA"
     },
     {
       "key": "kotor",
-      "group": {
-        "key": "other",
-        "name": "Other"
-      },
       "name": "Kotor 🇲🇪",
+      "groupKey": "other",
       "url": "https://maps.app.goo.gl/9FkjEDTdrhtLy16a8"
     },
     {
       "key": "budva",
-      "group": {
-        "key": "other",
-        "name": "Other"
-      },
       "name": "Budva 🇲🇪",
+      "groupKey": "other",
       "url": "https://maps.app.goo.gl/qJaEL4a3rpNbTN4g8"
     },
     {
       "key": "podgorica",
-      "group": {
-        "key": "other",
-        "name": "Other"
-      },
       "name": "Podgorica 🇲🇪",
+      "groupKey": "other",
       "url": "https://maps.app.goo.gl/1H2bTTxQqv6YtFba6"
     },
     {
       "key": "manisa",
-      "group": {
-        "key": "other",
-        "name": "Other"
-      },
       "name": "Manisa 🇹🇷",
+      "groupKey": "other",
       "url": "https://maps.app.goo.gl/1HocePZPg64VqPiXA"
     }
   ]
