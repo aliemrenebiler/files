@@ -433,7 +433,7 @@
       "images": []
     }
   ],
-  "cities": [
+  "mapGroups": [
     {
       "key": "stockholm",
       "name": "Stockholm"
@@ -447,10 +447,10 @@
       "name": "İzmir"
     }
   ],
-  "favoritePlaces": [
+  "maps": [
     {
       "key": "stockholmRestaurants",
-      "city": {
+      "group": {
         "key": "stockholm",
         "name": "Stockholm"
       },
@@ -459,7 +459,7 @@
     },
     {
       "key": "stockholmBars",
-      "city": {
+      "group": {
         "key": "stockholm",
         "name": "Stockholm"
       },
@@ -468,7 +468,7 @@
     },
     {
       "key": "stockholmCafes",
-      "city": {
+      "group": {
         "key": "stockholm",
         "name": "Stockholm"
       },
@@ -477,7 +477,7 @@
     },
     {
       "key": "stockholmDesserts",
-      "city": {
+      "group": {
         "key": "stockholm",
         "name": "Stockholm"
       },
@@ -486,7 +486,7 @@
     },
     {
       "key": "stockholmSights",
-      "city": {
+      "group": {
         "key": "stockholm",
         "name": "Stockholm"
       },
@@ -495,7 +495,7 @@
     },
     {
       "key": "stockholmParks",
-      "city": {
+      "group": {
         "key": "stockholm",
         "name": "Stockholm"
       },
@@ -504,7 +504,7 @@
     },
     {
       "key": "stockholmHistorical",
-      "city": {
+      "group": {
         "key": "stockholm",
         "name": "Stockholm"
       },
@@ -513,7 +513,7 @@
     },
     {
       "key": "stockholmShopping",
-      "city": {
+      "group": {
         "key": "stockholm",
         "name": "Stockholm"
       },
@@ -522,7 +522,7 @@
     },
     {
       "key": "istanbulBreakfast",
-      "city": {
+      "group": {
         "key": "istanbul",
         "name": "İstanbul"
       },
@@ -531,7 +531,7 @@
     },
     {
       "key": "istanbulRestaurants",
-      "city": {
+      "group": {
         "key": "istanbul",
         "name": "İstanbul"
       },
@@ -540,7 +540,7 @@
     },
     {
       "key": "istanbulBars",
-      "city": {
+      "group": {
         "key": "istanbul",
         "name": "İstanbul"
       },
@@ -549,7 +549,7 @@
     },
     {
       "key": "istanbulCafes",
-      "city": {
+      "group": {
         "key": "istanbul",
         "name": "İstanbul"
       },
@@ -558,7 +558,7 @@
     },
     {
       "key": "istanbulDesserts",
-      "city": {
+      "group": {
         "key": "istanbul",
         "name": "İstanbul"
       },
@@ -567,7 +567,7 @@
     },
     {
       "key": "istanbulSights",
-      "city": {
+      "group": {
         "key": "istanbul",
         "name": "İstanbul"
       },
@@ -576,7 +576,7 @@
     },
     {
       "key": "istanbulHistorical",
-      "city": {
+      "group": {
         "key": "istanbul",
         "name": "İstanbul"
       },
@@ -585,7 +585,7 @@
     },
     {
       "key": "istanbulShopping",
-      "city": {
+      "group": {
         "key": "istanbul",
         "name": "İstanbul"
       },
@@ -594,7 +594,7 @@
     },
     {
       "key": "izmirBreakfast",
-      "city": {
+      "group": {
         "key": "izmir",
         "name": "İzmir"
       },
@@ -603,7 +603,7 @@
     },
     {
       "key": "izmirRestaurants",
-      "city": {
+      "group": {
         "key": "izmir",
         "name": "İzmir"
       },
@@ -612,7 +612,7 @@
     },
     {
       "key": "izmirBars",
-      "city": {
+      "group": {
         "key": "izmir",
         "name": "İzmir"
       },
@@ -621,7 +621,7 @@
     },
     {
       "key": "izmirWinery",
-      "city": {
+      "group": {
         "key": "izmir",
         "name": "İzmir"
       },
@@ -630,7 +630,7 @@
     },
     {
       "key": "izmirCafes",
-      "city": {
+      "group": {
         "key": "izmir",
         "name": "İzmir"
       },
@@ -639,7 +639,7 @@
     },
     {
       "key": "izmirDesserts",
-      "city": {
+      "group": {
         "key": "izmir",
         "name": "İzmir"
       },
@@ -648,7 +648,7 @@
     },
     {
       "key": "izmirSeasides",
-      "city": {
+      "group": {
         "key": "izmir",
         "name": "İzmir"
       },
@@ -657,7 +657,7 @@
     },
     {
       "key": "izmirSights",
-      "city": {
+      "group": {
         "key": "izmir",
         "name": "İzmir"
       },
@@ -666,7 +666,7 @@
     },
     {
       "key": "izmirHistorical",
-      "city": {
+      "group": {
         "key": "izmir",
         "name": "İzmir"
       },
