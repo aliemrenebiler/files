@@ -402,7 +402,8 @@
       "description": "",
       "highlight": "",
       "url": "https://www.youtube.com/embed/MytPdqqk65Q",
-      "keywords": []
+      "keywords": [],
+      "images": []
     },
     {
       "key": "tedxYTUTheMaskIntro",
@@ -410,7 +411,8 @@
       "description": "",
       "highlight": "",
       "url": "https://www.youtube.com/embed/Pit0Xq2nR08",
-      "keywords": []
+      "keywords": [],
+      "images": []
     },
     {
       "key": "thriftyGreenhouseNarratedAnimation",
@@ -418,7 +420,8 @@
       "description": "",
       "highlight": "",
       "url": "https://www.youtube.com/embed/O2aPrIDHJzk",
-      "keywords": []
+      "keywords": [],
+      "images": []
     },
     {
       "key": "weVisionaryAkademiIntro",
@@ -426,7 +429,249 @@
       "description": "",
       "highlight": "",
       "url": "https://www.youtube.com/embed/9VhRnFbWrcA",
-      "keywords": []
+      "keywords": [],
+      "images": []
+    }
+  ],
+  "cities": [
+    {
+      "key": "stockholm",
+      "name": "Stockholm"
+    },
+    {
+      "key": "istanbul",
+      "name": "İstanbul"
+    },
+    {
+      "key": "izmir",
+      "name": "İzmir"
+    }
+  ],
+  "favoritePlaces": [
+    {
+      "key": "stockholmRestaurants",
+      "city": {
+        "key": "stockholm",
+        "name": "Stockholm"
+      },
+      "name": "Restaurants 🍴",
+      "url": "https://maps.app.goo.gl/fjErRgnkrT6LGVEs9"
+    },
+    {
+      "key": "stockholmBars",
+      "city": {
+        "key": "stockholm",
+        "name": "Stockholm"
+      },
+      "name": "Bars 🍸",
+      "url": "https://maps.app.goo.gl/RS97wkzPiY5wSn2C9"
+    },
+    {
+      "key": "stockholmCafes",
+      "city": {
+        "key": "stockholm",
+        "name": "Stockholm"
+      },
+      "name": "Cafes ☕️",
+      "url": "https://maps.app.goo.gl/7agR56tfRQNLoPit6"
+    },
+    {
+      "key": "stockholmDesserts",
+      "city": {
+        "key": "stockholm",
+        "name": "Stockholm"
+      },
+      "name": "Desserts 🍪",
+      "url": "https://maps.app.goo.gl/qjpN21cxHm1LRvKL8"
+    },
+    {
+      "key": "stockholmSights",
+      "city": {
+        "key": "stockholm",
+        "name": "Stockholm"
+      },
+      "name": "Sights ⭐️",
+      "url": "https://maps.app.goo.gl/GhqeBqmncdRfLfFWA"
+    },
+    {
+      "key": "stockholmParks",
+      "city": {
+        "key": "stockholm",
+        "name": "Stockholm"
+      },
+      "name": "Parks 🌳",
+      "url": "https://maps.app.goo.gl/fjErRgnkrT6LGVEs9"
+    },
+    {
+      "key": "stockholmHistorical",
+      "city": {
+        "key": "stockholm",
+        "name": "Stockholm"
+      },
+      "name": "Historical 🏛️",
+      "url": "https://maps.app.goo.gl/fjErRgnkrT6LGVEs9"
+    },
+    {
+      "key": "stockholmShopping",
+      "city": {
+        "key": "stockholm",
+        "name": "Stockholm"
+      },
+      "name": "Shopping 🛍️",
+      "url": "https://maps.app.goo.gl/fjErRgnkrT6LGVEs9"
+    },
+    {
+      "key": "istanbulBreakfast",
+      "city": {
+        "key": "istanbul",
+        "name": "İstanbul"
+      },
+      "name": "Breakfast 🍳",
+      "url": "https://maps.app.goo.gl/1UUbwbJUHxZDPiEW7"
+    },
+    {
+      "key": "istanbulRestaurants",
+      "city": {
+        "key": "istanbul",
+        "name": "İstanbul"
+      },
+      "name": "Restaurants 🍴",
+      "url": "https://maps.app.goo.gl/dyj24qcPCST2miHv5"
+    },
+    {
+      "key": "istanbulBars",
+      "city": {
+        "key": "istanbul",
+        "name": "İstanbul"
+      },
+      "name": "Bars 🍸",
+      "url": "https://maps.app.goo.gl/y8Pg2awqVv8jUomC9"
+    },
+    {
+      "key": "istanbulCafes",
+      "city": {
+        "key": "istanbul",
+        "name": "İstanbul"
+      },
+      "name": "Cafes ☕️",
+      "url": "https://maps.app.goo.gl/Nj2F2XTrjYTDmbng6"
+    },
+    {
+      "key": "istanbulDesserts",
+      "city": {
+        "key": "istanbul",
+        "name": "İstanbul"
+      },
+      "name": "Desserts 🍪",
+      "url": "https://maps.app.goo.gl/ubuJfntLRDwKDngs9"
+    },
+    {
+      "key": "istanbulSights",
+      "city": {
+        "key": "istanbul",
+        "name": "İstanbul"
+      },
+      "name": "Sights ⭐️",
+      "url": "https://maps.app.goo.gl/JbpDE5V44pz4ZW4i8"
+    },
+    {
+      "key": "istanbulHistorical",
+      "city": {
+        "key": "istanbul",
+        "name": "İstanbul"
+      },
+      "name": "Historical 🏛️",
+      "url": "https://maps.app.goo.gl/fqq1Z3nhYaCGJXJC6"
+    },
+    {
+      "key": "istanbulShopping",
+      "city": {
+        "key": "istanbul",
+        "name": "İstanbul"
+      },
+      "name": "Shopping 🛍️",
+      "url": "https://maps.app.goo.gl/5jLTEnTenUui4YPk9"
+    },
+    {
+      "key": "izmirBreakfast",
+      "city": {
+        "key": "izmir",
+        "name": "İzmir"
+      },
+      "name": "Breakfast 🍳",
+      "url": "https://maps.app.goo.gl/3DcRBM1RSwnqKix8A"
+    },
+    {
+      "key": "izmirRestaurants",
+      "city": {
+        "key": "izmir",
+        "name": "İzmir"
+      },
+      "name": "Restaurants 🍴",
+      "url": "https://maps.app.goo.gl/UXAUNnDDYk3SikUw5"
+    },
+    {
+      "key": "izmirBars",
+      "city": {
+        "key": "izmir",
+        "name": "İzmir"
+      },
+      "name": "Bars 🍸",
+      "url": "https://maps.app.goo.gl/jdzk398KnvCZNW4LA"
+    },
+    {
+      "key": "izmirWinery",
+      "city": {
+        "key": "izmir",
+        "name": "İzmir"
+      },
+      "name": "Winery 🍷",
+      "url": "https://maps.app.goo.gl/qD52vNgP8q3BT7Pe6"
+    },
+    {
+      "key": "izmirCafes",
+      "city": {
+        "key": "izmir",
+        "name": "İzmir"
+      },
+      "name": "Cafes ☕️",
+      "url": "https://maps.app.goo.gl/JibedEe2HxLizL3N8"
+    },
+    {
+      "key": "izmirDesserts",
+      "city": {
+        "key": "izmir",
+        "name": "İzmir"
+      },
+      "name": "Desserts 🍪",
+      "url": "https://maps.app.goo.gl/u2c7nZ7fJFa7b5fH6"
+    },
+    {
+      "key": "izmirSeasides",
+      "city": {
+        "key": "izmir",
+        "name": "İzmir"
+      },
+      "name": "Seasides 🏖️",
+      "url": "https://maps.app.goo.gl/W7sz88eihMtXK7SM6"
+    },
+    {
+      "key": "izmirSights",
+      "city": {
+        "key": "izmir",
+        "name": "İzmir"
+      },
+      "name": "Sights ⭐️",
+      "url": "https://maps.app.goo.gl/7Zg1G3WCrabB41957"
+    },
+    {
+      "key": "izmirHistorical",
+      "city": {
+        "key": "izmir",
+        "name": "İzmir"
+      },
+      "name": "Historical 🏛️",
+      "url": "https://maps.app.goo.gl/ciRznDcNvzCadu81A"
     }
   ]
 }
