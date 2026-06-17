@@ -53,7 +53,7 @@
       "key": "crcMlClassifier",
       "name": "CRC ML Classifier",
       "description": "Bachelor graduation thesis project developing a colorectal cancer classification tool using machine learning. Built a multi-stage Python and R pipeline covering data preprocessing, classifier training with grid search optimization, and survival analysis to identify potential biomarkers. Focused on building a reproducible data analysis pipeline as a practical and cost-effective alternative to traditional classification methods.",
-      "highlight": "Graduation Thesis",
+      "highlight": "Bachelor Graduation Thesis",
       "url": "https://github.com/aliemrenebiler/crc-ml-classifier",
       "keywords": [],
       "images": []
@@ -71,10 +71,36 @@
       "key": "handGesture2048",
       "name": "2048 Hand Gesture",
       "description": "Built a hand gesture-controlled version of the 2048 game as an embedded systems project. Uses a webcam and OpenCV to detect hand gestures in real time, translating movement direction into game controls. Originally developed on a Raspberry Pi 2, but runs on any Python-supported system.",
-      "highlight": "Embedded Systems Term Project",
+      "highlight": "Bachelor \"Embedded Systems\" Project",
       "url": "https://github.com/aliemrenebiler/2048-hand-gesture",
       "keywords": [],
       "images": []
+    },
+    {
+      "key": "kittApp",
+      "name": "Kitt App",
+      "description": "Kitt is a smart cat food bowl system that lets you monitor and manage your cat's feeding remotely. It consists of a mobile app, a backend service, and a small device that sits on the bowl itself, all working together to keep your cat fed and happy whether you are home or not.",
+      "highlight": "Masters \"IoT\" Project",
+      "url": "https://github.com/aliemrenebiler/kitt-app",
+      "keywords": [],
+      "images": [
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/kitt-app/dashboard.png",
+          "alt": "Kitt App Dashboard"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/kitt-app/add-device.png",
+          "alt": "Kitt App Add Device"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/kitt-app/device-detail.png",
+          "alt": "Kitt App Device Detail"
+        },
+        {
+          "src": "https://aliemrenebiler.github.io/files/projects/kitt-app/delete-device.png",
+          "alt": "Kitt App Delete Device"
+        }
+      ]
     },
     {
       "key": "rgbulbApp",
@@ -132,7 +158,7 @@
       "key": "shuttleflyEffectGame",
       "name": "Shuttlefly Effect Game",
       "description": "A storytelling space game where players guide three astronauts back to Earth after a shuttle accident. Each astronaut has unique skills, and choices affect health, morale, oxygen, and resources. Inspired by Reigns.",
-      "highlight": "Computer Engineering Midterm Project",
+      "highlight": "Bachelor Midterm Project",
       "url": "https://github.com/aliemrenebiler/shuttlefly-effect-game",
       "keywords": [],
       "images": [
