@@ -290,6 +290,28 @@
         ]
       },
       {
+        "name": "kitt-app",
+        "type": "folder",
+        "children": [
+          {
+            "name": "add-device.png",
+            "type": "file"
+          },
+          {
+            "name": "dashboard.png",
+            "type": "file"
+          },
+          {
+            "name": "delete-device.png",
+            "type": "file"
+          },
+          {
+            "name": "device-detail.png",
+            "type": "file"
+          }
+        ]
+      },
+      {
         "name": "logo-designs",
         "type": "folder",
         "children": [
