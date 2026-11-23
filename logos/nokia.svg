@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="213"
+   height="50"
+   viewBox="0 0 213 50"
+   fill="#005aff"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="nokia.svg"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.9605984"
+     inkscape:cx="170.8662"
+     inkscape:cy="-9.9459428"
+     inkscape:window-width="1440"
+     inkscape:window-height="782"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1" />
+  <path
+     d="M 71.902022,0.71844489 C 58.182549,0.71844489 47.537015,10.703888 47.537015,25 c 0,14.939889 10.644905,24.282182 24.365007,24.281555 C 85.622124,49.280889 96.288991,39.939262 96.267029,25 96.246951,11.454961 85.622124,0.71844489 71.902022,0.71844489 Z m 0,6.68498851 c 9.573827,0 17.334917,7.2057826 17.334917,17.5965666 0,10.583415 -7.76109,17.597194 -17.334917,17.597194 -9.573827,0 -17.334914,-7.014407 -17.334914,-17.597194 0,-10.391411 7.761087,-17.5965666 17.334914,-17.5965666 z M 147.14296,1.5203423 V 48.47903 h 7.04264 V 1.5203423 Z m -19.44192,0 -26.13697,23.4790297 26.13697,23.479658 h 10.47988 L 112.00443,24.999372 138.18092,1.5203423 Z M 186.50747,0 l -3.8225,7.0602112 12.96778,24.0870428 h -26.00646 l -9.38245,17.332403 h 7.74791 l 5.66598,-10.398939 h 25.66012 l 5.66533,10.398939 h 7.74728 z M 0.2495375,0 V 48.479657 H 7.4371238 V 16.441408 L 44.786846,50 V 39.948674 Z"
+     id="path1"
+     style="fill:#000000;fill-opacity:1;stroke-width:0.999999" />
+</svg>

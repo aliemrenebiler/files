@@ -1,25 +1,19 @@
 [
   {
-    "name": "images",
+    "name": "logos",
     "type": "folder",
     "children": [
       {
-        "name": "logos",
-        "type": "folder",
-        "children": [
-          {
-            "name": "nokia.png",
-            "type": "file"
-          },
-          {
-            "name": "sabancidx.png",
-            "type": "file"
-          },
-          {
-            "name": "vorker.png",
-            "type": "file"
-          }
-        ]
+        "name": "nokia.svg",
+        "type": "file"
+      },
+      {
+        "name": "sabancidx.svg",
+        "type": "file"
+      },
+      {
+        "name": "vorker.svg",
+        "type": "file"
       }
     ]
   },
